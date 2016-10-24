@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>007</display-name>
+	<servlet>
+		<servlet-name>ConfirmaInteresses</servlet-name>
+		<servlet-class>nassau.CadastrarInteresse</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConfirmaInteresses</servlet-name>
+		<url-pattern>/ConfirmaInteresses</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListaInteresses</servlet-name>
+		<servlet-class>nassau.ListarInteresses</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaInteresses</servlet-name>
+		<url-pattern>/ListarInteresses</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ResponderQuestao</servlet-name>
+		<servlet-class>nassau.ObterResposta</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResponderQuestao</servlet-name>
+		<url-pattern>/ObterResposta</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>014</display-name>
+
+	<servlet>
+		<servlet-name>acesso</servlet-name>
+		<servlet-class>nassau.Acesso</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>acessoUsuario</servlet-name>
+		<servlet-class>nassau.AcessoUsuario</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>acessoURLRewriting</servlet-name>
+		<servlet-class>nassau.AcessoUR</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>encerrarSessao</servlet-name>
+		<servlet-class>nassau.EncerrarSessao</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>acesso</servlet-name>
+		<url-pattern>/Acesso</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>acessoUsuario</servlet-name>
+		<url-pattern>/AcessoUsuario</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>acessoURLRewriting</servlet-name>
+		<url-pattern>/AcessoURL</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>encerrarSessao</servlet-name>
+		<url-pattern>/EncerrarSessao</url-pattern>
+	</servlet-mapping>
+
+
+
+	<session-config>
+		<session-timeout>1</session-timeout>
+	</session-config>
+</web-app>
